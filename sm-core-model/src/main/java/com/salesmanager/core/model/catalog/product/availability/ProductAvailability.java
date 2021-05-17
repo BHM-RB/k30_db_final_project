@@ -232,6 +232,10 @@ public class ProductAvailability extends SalesManagerEntity<Long, ProductAvailab
 	public Set<ProductPrice> getPrices() {
 		return prices;
 	}
+	
+	public ProductPrice getPrice() {
+		return prices.iterator().next();
+	}
 
 	public void setPrices(Set<ProductPrice> prices) {
 		this.prices = prices;
